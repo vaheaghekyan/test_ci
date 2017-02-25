@@ -38,9 +38,11 @@
 |
 */
 
-$route['default_controller'] = "examples/customers_management";
-$route['examples'] = 'examples/customers_management';
-$route['examples/read'] = 'examples/customers_management';
+$route['default_controller'] = "welcome";
+$route['add'] = 'examples/products_management/add';
+$route['read/:num'] = "examples/products_management/read";
+$route['edit/:num'] = 'examples/products_management/edit';
+$route['delete/:num'] = 'examples/products_management/delete';
 $route['404_override'] = '';
 
 
